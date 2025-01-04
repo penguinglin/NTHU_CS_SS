@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "58f5019a-5f9b-4dd7-9fd6-145368351ffd",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 70,
+  "height": 70,
+  "platformSettings": {},
+  "subMetas": {
+    "iceWaterDeepStarsAlt": {
+      "ver": "1.0.6",
+      "uuid": "6fb24a83-55ef-4fb9-a201-d2adfce8f188",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "58f5019a-5f9b-4dd7-9fd6-145368351ffd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 70,
+      "height": 70,
+      "rawWidth": 70,
+      "rawHeight": 70,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

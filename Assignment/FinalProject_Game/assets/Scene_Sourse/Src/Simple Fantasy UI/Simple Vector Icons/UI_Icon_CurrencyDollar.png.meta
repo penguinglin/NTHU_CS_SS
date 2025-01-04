@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "84fb9560-23ca-4ee9-aa8f-1b8898a2bfdc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_CurrencyDollar": {
+      "ver": "1.0.6",
+      "uuid": "66fef6d4-4f43-4236-8810-e1b5ddae297a",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "84fb9560-23ca-4ee9-aa8f-1b8898a2bfdc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 22,
+      "trimY": 10,
+      "width": 84,
+      "height": 108,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

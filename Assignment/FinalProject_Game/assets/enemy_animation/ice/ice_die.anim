@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "ice_die",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "debabac2-2c7c-46cb-8bac-e1da565a351b"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "d4e76b1b-6dea-4086-8fb5-dc9612717f05"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "bb94388d-b231-4961-9774-671c0d3f7060"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "56167997-6eed-4490-9ca4-a9d46011df20"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "0a32993e-5529-4464-84c5-1597870dd397"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "74bce1fc-297a-4c02-b7ba-3cbd5485aa94"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.5,
+          "value": 254
+        },
+        {
+          "frame": 0.6,
+          "value": 255
+        },
+        {
+          "frame": 0.7,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

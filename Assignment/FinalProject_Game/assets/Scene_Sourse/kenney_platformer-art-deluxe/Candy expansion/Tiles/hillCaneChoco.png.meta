@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "b83c95fe-e968-4a9e-bdfb-ee80419ceee2",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 70,
+  "height": 70,
+  "platformSettings": {},
+  "subMetas": {
+    "hillCaneChoco": {
+      "ver": "1.0.6",
+      "uuid": "8c6e1342-8785-44c8-8310-678c2d88f6b6",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "b83c95fe-e968-4a9e-bdfb-ee80419ceee2",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 70,
+      "height": 70,
+      "rawWidth": 70,
+      "rawHeight": 70,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

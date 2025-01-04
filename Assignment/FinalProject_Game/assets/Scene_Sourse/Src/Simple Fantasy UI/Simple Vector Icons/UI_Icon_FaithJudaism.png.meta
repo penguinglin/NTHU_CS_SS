@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "e47b1717-3843-4f22-aed6-c7d0c03c6327",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_FaithJudaism": {
+      "ver": "1.0.6",
+      "uuid": "962064fa-4bfa-4de5-b606-d5c539c60728",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "e47b1717-3843-4f22-aed6-c7d0c03c6327",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 18,
+      "trimY": 11,
+      "width": 92,
+      "height": 106,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a59f62d3-a690-426a-b7ff-9bfbd1c4746d",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_CreditCard": {
+      "ver": "1.0.6",
+      "uuid": "989d082d-2271-4a6a-94f7-401d40538842",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a59f62d3-a690-426a-b7ff-9bfbd1c4746d",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 12,
+      "trimY": 28,
+      "width": 104,
+      "height": 72,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

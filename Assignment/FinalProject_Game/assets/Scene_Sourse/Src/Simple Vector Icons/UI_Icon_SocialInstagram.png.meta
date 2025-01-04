@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "8265d191-2a64-441c-87e4-22282c7348dc",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_SocialInstagram": {
+      "ver": "1.0.6",
+      "uuid": "b188f7f1-0f58-4659-b4da-69d06af89ae2",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "8265d191-2a64-441c-87e4-22282c7348dc",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -0.5,
+      "offsetY": 0.5,
+      "trimX": 12,
+      "trimY": 11,
+      "width": 103,
+      "height": 105,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

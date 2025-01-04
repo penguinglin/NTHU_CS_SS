@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pumpkin_die",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "c2c5ac51-227b-4665-bbd9-7719b98c3e58"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "89170c35-76d9-4fad-a366-4d6cfc1fdbb9"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "d2d11d71-c230-45b7-ae73-273152e3c0f0"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "858d3daf-65d4-4988-acc6-ad707283f951"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "00bc7785-feb8-4cc0-8e31-519935cd1fbd"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "045333ea-90a2-4f0a-937b-1929d56aedf3"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.5,
+          "value": 254
+        },
+        {
+          "frame": 0.6,
+          "value": 255
+        },
+        {
+          "frame": 0.7,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "80deb9b0-982f-42ce-bb80-5f7cfba68b31",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 128,
+  "height": 128,
+  "platformSettings": {},
+  "subMetas": {
+    "UI_Icon_FaithTaosim": {
+      "ver": "1.0.6",
+      "uuid": "7181af51-f70d-4fe2-a912-363587c6f100",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "80deb9b0-982f-42ce-bb80-5f7cfba68b31",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 17,
+      "trimY": 21,
+      "width": 94,
+      "height": 86,
+      "rawWidth": 128,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

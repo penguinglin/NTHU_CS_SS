@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pumpkin_idle",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8,
+  "sample": 20,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "c2c5ac51-227b-4665-bbd9-7719b98c3e58"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "89170c35-76d9-4fad-a366-4d6cfc1fdbb9"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "d2d11d71-c230-45b7-ae73-273152e3c0f0"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "c2c5ac51-227b-4665-bbd9-7719b98c3e58"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

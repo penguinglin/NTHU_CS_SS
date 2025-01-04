@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bat_up",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.8888888888888888,
+  "sample": 18,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "b4cd3169-06f8-48c7-b44a-9960e5c47e96"
+            }
+          },
+          {
+            "frame": 0.2777777777777778,
+            "value": {
+              "__uuid__": "1dd4ea01-598f-4379-a02c-6f28903c12b4"
+            }
+          },
+          {
+            "frame": 0.5555555555555556,
+            "value": {
+              "__uuid__": "ed9c6243-839b-47d7-b04a-07bfb3d80876"
+            }
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": {
+              "__uuid__": "b4cd3169-06f8-48c7-b44a-9960e5c47e96"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

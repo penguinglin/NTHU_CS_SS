@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "69a702db-4ee7-41c4-b672-248c9c580767",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 633,
+  "height": 394,
+  "platformSettings": {},
+  "subMetas": {
+    "ChatGPT": {
+      "ver": "1.0.6",
+      "uuid": "8a46490d-5dd2-4ee9-9c27-5e4769c6802c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "69a702db-4ee7-41c4-b672-248c9c580767",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 175,
+      "trimY": 37,
+      "width": 283,
+      "height": 320,
+      "rawWidth": 633,
+      "rawHeight": 394,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "wind_die",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.7,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "75b61d0c-c98e-4783-a338-22207de92a5b"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "d5ac8b1d-b2fd-42bc-87ea-101b40a8173e"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "1c5cd382-d0ff-4091-8075-d5c484fdf081"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "e4ce5b86-3999-4986-948c-ba5558ed4020"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "15ae0bfd-7bc2-4e31-92a6-bfdafce2b388"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "d689c2bc-7061-453b-91af-6c5051b0585b"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 0.5,
+          "value": 254
+        },
+        {
+          "frame": 0.6,
+          "value": 255
+        },
+        {
+          "frame": 0.7,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

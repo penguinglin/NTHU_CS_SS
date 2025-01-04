@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "9d43d973-58c2-4cb7-ab83-983bc8772504",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1920,
+  "height": 1080,
+  "platformSettings": {},
+  "subMetas": {
+    "Blue and pink Mental Health illustrated presentation": {
+      "ver": "1.0.6",
+      "uuid": "05b70b49-ece8-4d04-9420-4e0ede1dd337",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "9d43d973-58c2-4cb7-ab83-983bc8772504",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1920,
+      "height": 1080,
+      "rawWidth": 1920,
+      "rawHeight": 1080,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
