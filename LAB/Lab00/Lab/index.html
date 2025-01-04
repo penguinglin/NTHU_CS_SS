@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<!-- head: to load CSS/JavaScript -->
+
+<head>
+  <!-- Set the title of the page -->
+  <title>Lab0-Example</title>
+
+  <!-- Import Bootstrap CSS for layout and styling -->
+  <link href="src/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Import custom CSS for the switch component -->
+  <link href="src/css/component-custom-switch.min.css" rel="stylesheet">
+  <!-- Import JavaScript for functionality -->
+  <script src="src/js/index.js"></script>
+</head>
+
+<body>
+  <!-- Main title of the page -->
+  <h1>Lab0 - Light Switch !</h1>
+
+  <!-- Set the background color of the page to black -->
+
+  <body style="background-color: black;">
+    <div class="container text-center">
+      <!-- Page heading with white text -->
+      <h1 style="color: aliceblue; margin-top: 30px;">Lab0 - Light Switch !</h1>
+
+      <!-- Image of a light bulb (initially off) -->
+      <div>
+        <img src='src/img/bulb_off.png' id="bulb" width="315" height="500">
+      </div>
+
+      <!-- Custom switch component -->
+      <div class="custom-switch custom-switch-label-onoff pl-0">
+        <!-- Checkbox for the light switch, triggers switchLight() when clicked -->
+        <input class="custom-switch-input" id="switch" type="checkbox" onclick="switchLight();">
+        <!-- Label for the switch, styled as a button -->
+        <label class="custom-switch-btn" for="switch"></label>
+      </div>
+    </div>
+  </body>
+</body>
+
+</html>
