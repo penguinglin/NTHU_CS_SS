@@ -1,4 +1,4 @@
-# Lab3
+# Lab3 Website
 ## Bootstrap Components
 • Button
 • Card

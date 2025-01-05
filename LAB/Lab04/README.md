@@ -1,4 +1,4 @@
-# Lab4
+# Lab4 Calculator
 ## Grading Policy
 1. *Correct evaluated result(include floating point) 30/30*
 2. *Show “error” on the screen when input is illegal 20/20*
