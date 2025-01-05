@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Lab_04 Calculator</title>
 
-		<!-- CSS and javascript -->
-		<link rel="stylesheet" type="text/css" href="Lab_04.css">
-		<script src="Lab_04.js"></script>
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Lab_04 Calculator</title>
 
-	<!-- Todo 1: onkeydown = "your function here" -->
-	<body style="background-color:gray;">
-		<div id="calculator">
-			<div>
-				<input type="text" class="display" id="screen" value="0" readonly>
-			</div>
-			<table style="width:100%; table-layout:fixed ;" border="0" cellpadding="0">
-				<!-- Todo 2: onclick = "your function here" -->
-				<tr class="row">
-					<td><input type="button" value="C" class="btn btn3" ></td>
-					<td><input type="button" value="(" class="btn btn3" ></td>
-					<td><input type="button" value=")" class="btn btn3" ></td>
-					<td><input type="button" value="÷" class="btn btn2" ></td>
-				</tr>
-				<tr class="row">
-					<td><input type="button" value="7" class="btn" ></td>
-					<td><input type="button" value="8" class="btn" ></td>
-					<td><input type="button" value="9" class="btn" ></td>
-					<td><input type="button" value="×" class="btn btn2" ></td> <!--the '×' is not lowercase 'X'-->
-				</tr>
-				<tr class="row">
-					<td><input type="button" value="4" class="btn" ></td>
-					<td><input type="button" value="5" class="btn" ></td>
-					<td><input type="button" value="6" class="btn" ></td>
-					<td><input type="button" value="-" class="btn btn2" ></td>
-				</tr>	
-				<tr class="row">
-					<td><input type="button" value="1" class="btn" ></td>
-					<td><input type="button" value="2" class="btn" ></td>
-					<td><input type="button" value="3" class="btn" ></td>
-					<td><input type="button" value="+" class="btn btn2" ></td>
-				</tr>
-				<tr class="row">
-					<td colspan=2><input type="button" value="0" class="btn" style="width:100%;border-radius:40px"></td>
-					<td><input type="button" value="." class="btn" ></td>
-					<td><input type="button" value="=" class="btn btn2" ></td>
-				</tr>
-			</div>
+	<!-- CSS and javascript -->
+	<link rel="stylesheet" type="text/css" href="Lab_04.css">
+	<script src="Lab_04.js"></script>
+</head>
+
+
+<!-- Todo 1: Add onkeydown for keyboard input -->
+
+<body style="background-color:gray;" onkeydown="handleKeyDown(event)">
+	<div id="calculator">
+		<div>
+			<input type="text" class="display" id="screen" value="0" readonly>
 		</div>
-	</body>
+		<table style="width:100%; table-layout:fixed;" border="0" cellpadding="0">
+			<!-- Todo 2: Add onclick for buttons -->
+			<tr class="row">
+				<td><input type="button" value="C" class="btn btn3" onclick="handleButtonClick('C')"></td>
+				<td><input type="button" value="(" class="btn btn3" onclick="handleButtonClick('(')"></td>
+				<td><input type="button" value=")" class="btn btn3" onclick="handleButtonClick(')')"></td>
+				<td><input type="button" value="÷" class="btn btn2" onclick="handleButtonClick('/')"></td>
+			</tr>
+			<tr class="row">
+				<td><input type="button" value="7" class="btn" onclick="handleButtonClick('7')"></td>
+				<td><input type="button" value="8" class="btn" onclick="handleButtonClick('8')"></td>
+				<td><input type="button" value="9" class="btn" onclick="handleButtonClick('9')"></td>
+				<td><input type="button" value="×" class="btn btn2" onclick="handleButtonClick('*')"></td>
+			</tr>
+			<tr class="row">
+				<td><input type="button" value="4" class="btn" onclick="handleButtonClick('4')"></td>
+				<td><input type="button" value="5" class="btn" onclick="handleButtonClick('5')"></td>
+				<td><input type="button" value="6" class="btn" onclick="handleButtonClick('6')"></td>
+				<td><input type="button" value="-" class="btn btn2" onclick="handleButtonClick('-')"></td>
+			</tr>
+			<tr class="row">
+				<td><input type="button" value="1" class="btn" onclick="handleButtonClick('1')"></td>
+				<td><input type="button" value="2" class="btn" onclick="handleButtonClick('2')"></td>
+				<td><input type="button" value="3" class="btn" onclick="handleButtonClick('3')"></td>
+				<td><input type="button" value="+" class="btn btn2" onclick="handleButtonClick('+')"></td>
+			</tr>
+			<tr class="row">
+				<td colspan=2><input type="button" value="0" class="btn" style="width:100%;border-radius:40px"
+						onclick="handleButtonClick('0')"></td>
+				<td><input type="button" value="." class="btn" onclick="handleButtonClick('.')"></td>
+				<td><input type="button" value="=" class="btn btn2" onclick="handleButtonClick('=')"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+
 </html>
