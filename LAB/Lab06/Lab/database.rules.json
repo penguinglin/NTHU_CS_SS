@@ -1,0 +1,8 @@
+{
+    "rules": {
+        // TODO 8: Set rules to "com_list" node, let it only can be read/write when user is login
+        // Hint : https://reurl.cc/O1VzYv
+        ".write": false,
+        ".read": false
+    }
+}

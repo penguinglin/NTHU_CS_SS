@@ -1,0 +1,20 @@
+# Lab07 - React Shopping App
+## Goal
+* TODO-1: Increase / Decrease item amount
+* TODO-2, 3: Add to shopping cart and show items
+* TODO-4: Calculate and display total price
+* TODO-5: Clear the shopping cart
+* TODO-6: Remove specific item in shopping cart
+* TODO-7: Pay money
+* TODO-8, 9: Input value and charge money 
+
+
+## Grading Policy
+**Deadline: 2024/04/16 17:20 (No late demo or submission!)**
+* Increase / Decrease item amount - 20%
+* Add to shopping cart and show items - 20%
+* Calculate and display total price - 10%
+* Clear the shopping cart - 10%
+* Remove specific item in shopping cart - 10%
+* Pay money correctly - 20%
+* Input and charge money correctly - 10%
