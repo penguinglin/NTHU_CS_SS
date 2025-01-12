@@ -9,7 +9,7 @@ function create_alert(type, message) {
         alertarea.innerHTML = str_html;
     }
 }
-
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 function initApp() {
     // Login with Email/Password
     var txtEmail = document.getElementById('inputEmail');
@@ -19,16 +19,35 @@ function initApp() {
     var btnSignUp = document.getElementById('btnSignUp');
 
     // SIGN UP
-    btnSignUp.addEventListener('click', function() {
+    btnSignUp.addEventListener('click', function () {
+
         // TODO 2: Add email signup button event
         //     Steps:
         //     1. Get user input email and password to signup
         //     2. Show success message using custom alert by calling "create_alert()" and clear input field
         //     3. Show error message using custom alert by calling "create_alert()" and clear input field
+        const auth = getAuth();
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // use create_alert to show success message
+                create_alert("success", "Sign up successfully");
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                //use create_error
+                create_alert("error", errorMessage);
+            });
+
+        //clear input field
+        txtEmail.value = '';
+        txtPassword.value = '';
     });
 
     // SIGN IN
-    btnLogin.addEventListener('click', function() {
+    btnLogin.addEventListener('click', function () {
         // TODO 3: Add email login button event
         //     Steps:
         //     1. Get user input email and password to login
@@ -40,19 +59,20 @@ function initApp() {
     });
 
     // GOOGLE SIGN IN
-    btnGoogle.addEventListener('click', function() {
+    btnGoogle.addEventListener('click', function () {
         // TODO 4: Add google login button event
         //     Steps:
         //     1. Use pop-up function to login with google account
         //     2. Redirect to index.html when login success
         //     3. Show error message by "create_alert()"
-        
+        create_alert()
+
 
     });
 
 
 }
 
-window.onload = function() {
+window.onload = function () {
     initApp();
 };

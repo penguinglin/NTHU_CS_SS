@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon/icon.png">
+    <title>Draw</title>
+    <!-- reference=> keep website in best view -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="white">
+
+    <!-- header -->
+    <div id="header">
+        <!-- title-ok -->
+        <div id="title" style="color:  #fff; margin-top: 15px;margin-left: 10px;margin-right: 20px; float: left ;">Web
+            Canvas
+        </div>
+
+        <!-- undo/redo - not ready -->
+        <div class="action" :class="{'is-disable': currentImgsIdx < 0}" @click.stop="onShiftStep(-1)">
+            <i class="fas fa-chevron-left"></i>
+            <img src="icon/redo.jpg" id="image_src">
+            <p class="text">UNDO</p>
+        </div>
+        <div class="action" :class="{'is-disable': currentImgsIdx === historyImgs.length - 1}"
+            @click.stop="onShiftStep(1)">
+            <i class="fas fa-chevron-right"></i>
+            <img src="icon/do.jpg" id="image_src">
+            <p class="text">REDO</p>
+        </div>
+
+        <!-- upload-ok -->
+        <label class="action" for="file">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <img src="icon/upload.jpg" id="image_src">
+            <p class="text">UPLOAD</p>
+            <input type="file" id="file" hidden accept="image/jpeg, image/png" @change="onUploadImage">
+        </label>
+        <!-- save-ok -->
+        <a class="action" :href="base64" download="myCanvas.png">
+            <i class="fas fa-save"></i>
+            <img src="icon/download.jpg" id="image_src">
+            <p class="text">SAVE</p>
+            <img :src="base64" alt hidden>
+        </a>
+        <!-- clear-ok -->
+        <div class="action" @click="onClear">
+            <i class="fas fa-trash-alt"></i>
+            <img src="icon/delete.jpg" id="image_src">
+            <p class="text">CLEAR</p>
+        </div>
+        <!-- homepages-ok -->
+        <div id="about"><a href="homepage.html"><img src="icon/icon.png"
+                    style="height: 20px; width: 20px; margin-right: 3px;">HomePage</a>
+        </div>
+    </div>
+
+
+    <!-- toolbar -->
+    <div id="popUp">
+        <!-- toolbar title-ok -->
+        <div id="tools" style="margin-right: 27px;">Toolbar</div>
+
+        <!-- draw buttons- not ready(icon ready) -->
+        <button id="pencil" title="Pencil" class="draw_button" onclick="pick_size_f()"><img
+                src="icon/change_painter.jpg" id="draw_icon"></button>
+
+        <!-- size-can do more -->
+        <div id="pick_size" style="display: none;">
+            <div class="rad">SIZE
+                <input type="number" id="Line" name="Line" min="1" max="200" value="10" class="drawControl">
+            </div>
+        </div>
+        <script>
+            function pick_size_f() {
+                var pick_sizeContainer = document.getElementById('pick_size');
+                if (pick_sizeContainer.style.display === 'none') {
+                    pick_sizeContainer.style.display = 'block';
+                } else {
+                    pick_sizeContainer.style.display = 'none';
+                }
+            }
+        </script>
+
+        <!-- color picker-ok -->
+        <button id=" color" title="colorpicker" class="draw_button" onclick="toggleColorPicker()">
+            <img src="icon/color.jpg" id="draw_icon">
+        </button>
+        <div id="colorPickerContainer" style="display: none;">
+            <div id="color-picker-container">
+                <div id="color-preview"></div>
+                <input type="range" id="red-slider" min="0" max="255" value="0">
+                <input type="range" id="green-slider" min="0" max="255" value="0">
+                <input type="range" id="blue-slider" min="0" max="255" value="0">
+            </div>
+        </div>
+        <script>
+            function toggleColorPicker() {
+                var colorPickerContainer = document.getElementById('colorPickerContainer');
+                if (colorPickerContainer.style.display === 'none') {
+                    colorPickerContainer.style.display = 'block';
+                } else {
+                    colorPickerContainer.style.display = 'none';
+                }
+            }
+        </script>
+
+
+        <!-- not ready -->
+        <button id="eraser" title="Eraser" class="draw_button"><img src="icon/eraser.jpg" id="draw_icon"
+                onclick="drawEraser()"></button>
+        <script>
+            var drawEraser = function () {
+                initDraw("eraserFlag");
+                eraserBtn.style.background = "#22A6F2";
+                eraserBtn.style.color = "#eee";
+            }
+        </script>
+
+        <button id="rect" title="Rectangle" class="draw_button"><img src="icon/rectangle_fill.jpg" id="draw_icon"
+                onclick="drawStrokeRect()"></button>
+        <script>
+            var drawRect = function () {
+                initDraw("rectFlag");
+                rectBtn.style.background = "#22A6F2";
+                rectBtn.style.color = "#eee";
+            }
+            var drawStrokeRect = function () {
+                initDraw("strokeRectFlag");
+                strokeRectBtn.style.background = "#22A6F2";
+                strokeRectBtn.style.color = "#eee";
+            }
+        </script>
+
+        <button id="circle" title="Circle" class="draw_button"><img src="icon/circle_fill.jpg" id="draw_icon"
+                onclick="drawStrokeCircle()"></button>
+        <script>
+            var drawCircle = function () {
+                initDraw("circleFlag");
+                circleBtn.style.background = "#22A6F2";
+                circleBtn.style.color = "#eee";
+            }
+
+            var drawStrokeCircle = function () {
+                initDraw("strokeCircelFlag");
+                strokeCircleBtn.style.background = "#22A6F2";
+                strokeCircleBtn.style.color = "#eee";
+            }
+        </script>
+
+        <button id="triangle" title="Triangle" class="draw_button"><img src="icon/triangle_fill.jpg"
+                id="draw_icon"></button>
+        <script>
+            var drawRect = function () {
+                initDraw("rectFlag");
+                rectBtn.style.background = "#22A6F2";
+                rectBtn.style.color = "#eee";
+            };
+        </script>
+
+
+        <button id="fill" title="Fill" class="draw_button"><img src="icon/fill2.jpg" id="draw_icon"></button>
+
+
+
+        <!-- typing -->
+        <button id="type" title="typing" class="draw_button"><img src="icon/typing.jpg" id="draw_icon"
+                onclick="input_typing()"></button>
+        <div id="input_text" style="display: none;">
+            <div class="rad">TEXT</div>
+            <div class="rad"><input type="number" id="fontSizeInput" min="1" max="100" value="20">
+                <select id="fontFamilyInput">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                </select><input id="textBtn" type="button" onclick="drawText()" value="✔" style="margin-left: 5px;">
+            </div>
+        </div>
+        <script>
+            function input_typing() {
+                var input_textContainer = document.getElementById('input_text');
+                if (input_textContainer.style.display === 'none') {
+                    input_textContainer.style.display = 'block';
+                } else {
+                    input_textContainer.style.display = 'none';
+                }
+            }
+            var drawText = function () {
+                initDraw("textFlag");
+                textBtn.style.background = "#22A6F2";
+                textBtn.style.color = "#eee";
+            };
+        </script>
+
+
+
+
+        <!-- clear-not ready -->
+        <button id="clear" title="Eraser" class="controlTab" style="display: none;"></button>
+    </div>
+
+    <!-- pick toolbar-ok -->
+    <div id="click">
+        <span aria-hidden="true" title="Click to Open" class="glyphicon glyphicon-dashboard"><img src="icon/edit.jpg"
+                id="image_src" style="width: 50px; height: 50px; "></span>
+    </div>
+
+
+
+    <!-- canva -->
+    <canvas id="myCanvas" width="700" height="500"></canvas>
+
+    <!-- 引入 JavaScript 檔案 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="app.js"></script>
+</body>
