@@ -1,0 +1,68 @@
+onBeginContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
+        // Check if the player touches the platform
+        if (otherCollider.node.name === "Player") {
+            const player = otherCollider.node.getComponent("Player");
+
+            // Check the type of the platform
+            switch (selfCollider.node.name) {
+                case "Normal":
+                    // Play sound effect only on the first touch
+                    if (!this.isTouched) {
+                        cc.audioEngine.playEffect(this.soundEffect, false);
+                        this.isTouched = true;
+                    }
+                    // Call playerRecover function
+                    player.playerRecover();
+                    break;
+                case "Fake":
+                    // Play animation on touch
+                    this.playAnim();
+                    // Make the player fall after 0.2 seconds
+                    setTimeout(() => {
+                        player.playerFall();
+                    }, 200);
+                    break;
+                case "Nails":
+                    // Call playerDamage function
+                    player.playerDamage();
+                    break;
+                case "Trampoline":
+                    // Play animation on touch
+                    this.playAnim();
+                    // Apply spring effect to the player
+                    const trampolinePlayerRigidBody = otherCollider.node.getComponent(cc.RigidBody);
+                    trampolinePlayerRigidBody.linearVelocity = cc.v2(trampolinePlayerRigidBody.linearVelocity.x, this.springVelocity);
+                    break;
+                case "Conveyor":
+                    // Apply move effect to the player
+                    const playerRigidBody = otherCollider.node.getComponent(cc.RigidBody);
+                    playerRigidBody.linearVelocity = cc.v2(this.moveSpeed, playerRigidBody.linearVelocity.y);
+                    break;
+            }
+        }
+    }
+
+    onEndContact(contact: cc.PhysicsContact, selfCollider: cc.PhysicsCollider, otherCollider: cc.PhysicsCollider) {
+        // Check if the player leaves the platform
+        if (otherCollider.node.name === "Player") {
+            const player = otherCollider.node.getComponent("Player");
+
+            // Check the type of the platform
+            switch (selfCollider.node.name) {
+                case "Fake":
+                    // Reset the isTouched flag
+                    this.isTouched = false;
+                    break;
+                case "Trampoline":
+                    // Reset the player's velocity
+                    const trampolinePlayerRigidBody = otherCollider.node.getComponent(cc.RigidBody);
+                    trampolinePlayerRigidBody.linearVelocity = cc.v2(trampolinePlayerRigidBody.linearVelocity.x, 0);
+                    break;
+                case "Conveyor":
+                    // Reset the player's velocity
+                    const playerRigidBody = otherCollider.node.getComponent(cc.RigidBody);
+                    playerRigidBody.linearVelocity = cc.v2(0, playerRigidBody.linearVelocity.y);
+                    break;
+            }
+        }
+    }
